@@ -1,0 +1,67 @@
+body {
+
+	background: #090e14;  /* fallback for old browsers */
+	color: #fff;
+	font-family: 'Times', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.bull {
+	color: #1B5E20;
+}
+
+.bear {
+	color: #B71C1C;
+}
+.animate-bull {
+	-webkit-animation: animate-bull 1s ease-in-out;
+	-o-animation: animate-bull 1s ease-in-out;
+	animation: animate-bull 1s ease-in-out;
+}
+
+.animate-bear {
+	-webkit-animation: animate-bear 1s ease-in-out;
+	-o-animation: animate-bear 1s ease-in-out;
+	animation: animate-bear 1s ease-in-out;
+}
+
+.coinNameBlock {
+	float: left;
+}
+
+.coinPriceBlock {
+	float: right;
+}
+
+.coinStatTable {
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+}
+
+.mb10 {
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+#graph {
+	margin-top: 40px;
+	width: 100% !important;
+	height: 320px !important;
+}
+
+#legend {
+    float: right;
+    padding: 10px;
+}
+
+@keyframes animate-bull {
+	from { background-color: #66BB6A }
+	to { background-color: transparent }
+}
+
+@keyframes animate-bear {
+	from { background-color: #EF5350 }
+	to { background-color: transparent }
+}
