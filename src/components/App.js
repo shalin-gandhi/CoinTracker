@@ -32,7 +32,7 @@ class App extends React.Component {
 		if (isLoading)
 			return
 		this.setState({isLoading:true});
-		fetch("http://coincap.io/front")
+		fetch("https://coincap.io/front")
 		.then((response) => response.json())
 		.then((response) => {
 			let coins = []

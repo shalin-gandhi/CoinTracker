@@ -88,7 +88,7 @@ class CoinDetail extends React.Component {
 		if (isLoading || symbol === "")
 			return
 		this.setState({isLoading:true});
-		fetch("http://coincap.io/page/"+symbol)
+		fetch("https://coincap.io/page/"+symbol)
 		.then((response) => response.json())
 		.then((response) => {
 			data = response
